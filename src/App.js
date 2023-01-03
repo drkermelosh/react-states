@@ -35,7 +35,7 @@ export const MyContext = React.createContext();
 function App() {
   return (
     <div className="App">
-      <NormalVariables />
+      <ClassStateExample />
     </div>
   );
 }
