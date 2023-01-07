@@ -8,12 +8,21 @@ class CounterUsingClassState extends Component {
     };
   }
 
-  incrementCount = () => {
-    this.setState({
-      count: this.state.count + 1,
-    });
-  };
+  // incrementCount = () => {
+  //   this.setState({
+  //     count: this.state.count + 1,
+  //   });
+  // };
 
+  incrementCount = () => {
+
+    this.setState((x) => {
+
+      return {
+        count: x.count + 1,
+      };
+      })
+    }
   render() {
     return (
       <div>

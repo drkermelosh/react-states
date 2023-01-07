@@ -12,16 +12,16 @@ class ClassStateExample extends Component {
     };
   }
 
-  // ReactEvent = () => {
-  //   alert("You clicked me!!");
-  // };
+  ReactEvent = () => {
+    alert("You clicked me!!");
+  };
 
   render() {
     return (
       <div>
         <h1>This is where you call the state</h1>
         <h2>To call the state: {this.state.state1}</h2>
-        {/* <button onClick={this.ReactEvent}> Click me </button> */}
+        <button onClick={this.ReactEvent}> Click me </button>
 
         <AnotherComponent someproperty={this.state.state2} />
       </div>
